@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript </title>
+</head>
+<body>
+    <h1>Calculo de notas escolares, descubra se está aprovado ou reprovado</h1>
+    
+    <p> Digite sua nota1 de matemática<span id="nota1"></span></p>
+    <p> Digite sua nota2 de português<span id="nota2"></span></p>
+    <p> Digite sua nota3 de biologia<span id="nota3"></span></p>
+    <p> Digite sua nota4 de geografia<span id="nota4"></span></p
+    <p> Resultado:<span id="resultado"></span></p>
+
+
+
+    <script>
+        let nota1; 
+        let nota2;
+        let nota3;
+        let nota4;
+        let resultado;
+ 
+    nota1= Number(prompt ("Digite a nota1 de matemática"));
+    nota2= Number(prompt ("Digite a nota2 de português"));
+    nota3= Number(prompt ("Digite a nota3 de biologia"));
+    nota4= Number(prompt ("Digite a nota4 de geografia"));
+   
+    resultado= (nota1+nota2+nota3+nota4)/4
+
+        if(resultado >= 7){
+            resultado= "aprovado";
+        }
+        else{
+            resultado= "reprovado";
+        }
+        
+         
+
+document.getElementById('nota1').innerHTML=nota1;
+document.getElementById('nota2').innerHTML=nota2;
+document.getElementById('nota3').innerHTML=nota3;
+document.getElementById('nota4').innerHTML=nota4;
+document.getElementById('resultado').innerHTML=resultado;
+
+
+       
+
+
+
+    </script>
+</body>
+</html>

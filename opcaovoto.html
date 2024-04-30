@@ -1,0 +1,41 @@
+!DOCTYPE html>"pt-br"
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=~]vz, initial-scale=1.0">
+    <title>Descubra se seu voto é opcional ou não no brasil</title>
+</head>
+<body>
+    <h1>Permissão de voto no brasil</h1>
+    <p>Nome: <span id="nomepessoa"></span></p>
+    <p>Idade: <span id="idadepessoa"></span></p>
+    <p>Voto obrigatório: <span id="obrigatorio"></span> </p>
+
+    <script>
+
+    let nome; 
+    let idade; 
+    let obrigatorio;
+
+    nome = prompt("Digite o seu nome")
+    idade= prompt ("Digite a sua idade")
+
+    if(idade >= 18) {
+     obrigatorio= "sim";
+    }else{
+    obrigatorio= "não";
+    }
+
+
+    //console.log(permissao); para mostrar no console 
+
+    document.getElementById('nomepessoa').innerHTML=nome;
+    document.getElementById('idadepessoa').innerHTML=idade;
+    document.getElementById('obrigatorio').innerHTML=obrigatorio;
+    
+    
+
+    </script>
+</body>
+</html>

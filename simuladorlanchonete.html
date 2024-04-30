@@ -1,0 +1,60 @@
+<!DOCTYPE html>"pt-br"
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=~]vz, initial-scale=1.0">
+    
+    <title>Simulator lanchonete/ fasfood</title>
+</head>
+<body>
+
+    <h1>Simulador de lanchonete</h1>
+    <p> Hot dog R$ 1,00: <span id="hotdog"></span></p>
+    <p> Hambúrguer R$ 1,30: <span id="hamburguer"></span></p>
+    <p> Cheeseburguer R$ 1,50: <span id="xburguer"></span></p>
+    <p> Refrigerante em lata R$ 1,00: <span id="refrilata"></span></p>
+    <p> Batatas fritas R$ 0,80: <span id="batatafrita"></span></p>
+    <p> resultado: <span id="resultado"></span></p>
+
+    <script>
+
+//2 - Leia o nome de um cliente de fast food e a quantidade de cada item do menu que ele vai pedir. Imprima o nome do cliente 
+//e o total da compra.
+//Menu
+//Hot dog R$ 1,00
+//Hambúrguer R$ 1,30
+////Cheeseburguer R$ 1,50
+//Refrigerante em lata R$ 1,00
+//Batatas fritas R$ 0,80
+
+
+    let hotdog; 
+    let hamburguer; 
+    let xburguer;
+    let refrilata
+    let batatafrita;
+    let resultado;
+
+    hotdog = Number(prompt("|1,00| Digite a quantidade de hotdog que deseja."))
+    hamburguer= Number(prompt ("|1,30| Digite a quantidade de hamburguer que deseja."))
+    xburguer = Number(prompt("|1,50| Digite a quantidade de cheeseburguer que deseja."))
+    batatafrita = Number(prompt("|1,50| Digite a quantidade de cheeseburguer que deseja."))
+    refrilata= Number(prompt ("|1,00| Digite a quantidade de refrigerante de lata que deseja."))
+    resultado== hotdog+hamburguer+xburguer+batatafrita+refrilata
+    //resultado=  prompt ("o seu pedido será" hotdog "hotdog," hamburguer "hamburguer," xburguer "xburguer," batatafrita "batatas fritas," refrilata "refrigerante de lata");
+
+    resultado== hotdog+hamburguer+xburguer+batatafrita+refrilata
+
+
+
+    //console.log(permissao); para mostrar no console 
+
+    document.getElementById('hotdog').innerHTML=hotdog;
+    document.getElementById('hamburguer').innerHTML=hamburguer;
+    document.getElementById('xburguer').innerHTML=xburguer;
+    document.getElementById('batatafrita').innerHTML=batatafrita;
+    document.getElementById('refrilata').innerHTML=refrilata;
+    document.getElementById('resultado').innerHTML=resultado;
+
+

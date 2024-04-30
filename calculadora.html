@@ -1,0 +1,55 @@
+<!DOCTYPE html>"pt-br"
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=~]vz, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Somar, Dividir, subtrair, e multiplicar dois valores</h1>
+    <p> valor1: <span id="valor1"></span></p>
+    <p> valor2: <span id="valor2"></span></p>
+    <p> escolha entre : /a/ soma  /b/multiplicação  /c/ divisao  /d/subtração : <span id="opcao"></span> </p>
+    <p> resultado: <span id="resultado"></span></p>
+
+    <script>
+    let valor1; 
+    let valor2; 
+    let opcao;
+    let resultado;
+
+    valor1 = Number(prompt("Digite o primeiro valor"))
+    valor2= Number(prompt ("Digite o segundo valor"))
+    opcao=  prompt ("Escolha entre: /a/ somar  /b/multiplicar /c/ dividir  /d/subtrair")
+
+    if(opcao == "a") {
+     resultado= valor1+valor2;
+    }
+
+    if(opcao == "b") {
+     resultado= valor1*valor2;
+    }
+
+    if(opcao == "c") {
+     resultado= valor1/valor2;
+    }
+
+    if(opcao == "d") {
+     resultado= valor1-valor2;
+    }
+
+
+    //console.log(permissao); para mostrar no console 
+
+    document.getElementById('valor1').innerHTML=valor1;
+    document.getElementById('valor2').innerHTML=valor2;
+    document.getElementById('opcao').innerHTML=opcao;
+    document.getElementById('resultado').innerHTML=resultado;
+
+    
+    
+
+    </script>
+</body>
+</html>
